@@ -65,7 +65,9 @@ public class BallController : NetworkBehaviour
     [ClientRpc]
     private void RpcEnableBall(NetworkInstanceId id)
     {
+        //Tryed this on Server because maybe i cant disable as client
         CmddisableBall();
+        //gm.ball.SetActive(false);
         ballRenderer.enabled = true;
     }
 
