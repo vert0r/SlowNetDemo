@@ -35,9 +35,7 @@ public class BallController : NetworkBehaviour
     public override void OnStartLocalPlayer()
     {
         //Debug.Log("StartLocal");
-        GameManager gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         //Debug.Log("start gm" + gm);
-        MyNetworkManager m = GameObject.Find("Network Manager").GetComponent<MyNetworkManager>();
         name = "Player " + m.numPlayers.ToString();
     }
 
