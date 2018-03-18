@@ -11,7 +11,7 @@ public class BallController : NetworkBehaviour
     MyNetworkManager m;
     Renderer ballRenderer;
 
-    private void Start()
+    private void Awake()
     {
         //GET NETWORK OBJECTS
         if (!isLocalPlayer)
