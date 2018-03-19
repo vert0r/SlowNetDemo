@@ -11,7 +11,7 @@ public class BallController : NetworkBehaviour
     MyNetworkManager m;
     Renderer ballRenderer;
 
-    private void Awake()
+    private void Start()
     {
         //GET NETWORK OBJECTS
         if (!isLocalPlayer)
@@ -36,7 +36,7 @@ public class BallController : NetworkBehaviour
     {
         //Debug.Log("StartLocal");
         //Debug.Log("start gm" + gm);
-        name = "Player " + m.numPlayers.ToString();
+        //name = "Player " + m.numPlayers.ToString();
     }
 
     void OnCollisionEnter(Collision collision)
